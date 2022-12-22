@@ -1,0 +1,1 @@
+json.array! @noticia, partial: "noticia/noticias", as: :noticia

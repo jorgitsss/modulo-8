@@ -1,0 +1,42 @@
+<%= form_with(model: noticias) do |form| %>
+  <% if noticia.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(noticia.errors.count, "error") %> prohibited this noticia from being saved:</h2>
+
+      <ul>
+        <% noticia.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titulo, style: "display: block" %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div>
+    <%= form.label :contenido, style: "display: block" %>
+    <%= form.text_field :contenido %>
+  </div>
+
+  <div>
+    <%= form.label :link, style: "display: block" %>
+    <%= form.text_field :link %>
+  </div>
+
+  <div>
+    <%= form.label :tipo, style: "display: block" %>
+    <%= form.number_field :tipo %>
+  </div>
+
+  <div>
+    <%= form.label :estado, style: "display: block" %>
+    <%= form.number_field :estado %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
