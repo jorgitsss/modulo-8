@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doomscrolling</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <main class="container">
+  <nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Category</a></li>
+    <li>Page</li>
+  </ul>
+</nav>
+  <%= yield %></main>
+  </body>
+</html>
+
