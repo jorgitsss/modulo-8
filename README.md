@@ -1,24 +1,38 @@
-# README
+Guia Aprendisajes Grupales Modulo 8 - Grupo 3
+Proyecto en Ruby on Rails integrado con Heroku
+***
+## Aprendizaje Esperado 1
+<dl>
+  <dt>Desarrollo</dt>
+  <dd>Crear Proyecto en rails sin texting deniminado doomscrolling</dd>
+  
+```rails
+rails new doomscrolling -T
+```
+  <dd>Crear controlador y dos vistas </dd>
+  
+```rails
+rails generate controller articles notice
+```
+</dl>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+***
+## Aprendizaje Esperado 2
+<dl>
+  <dt>Desarrollo</dt>
+  <dd>Frame Bootstrap aplicado a controlador y dos vistas</dd>
+</dl>
+aplicamos el cdn obtenido en https://getbootstrap.com/
+dentro del layout de nuestro proyecto ubicado en 
+app>views>layouts>application.html.erb
 
-Things you may want to cover:
+***
+## Aprendizaje Esperado 3
+<dl>
+  <dt>Desarrollo</dt>
+  <dd>Creado Scaffold llamado blogger para las noticias y aplicado card de botstrap a la lista</dd>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```rails
+rails generate scaffold bloggers titulo:string contenido:string link:string tipo:integer estado:integer
+```
+</dl>
