@@ -3,14 +3,8 @@
 <h1>Bloggers</h1>
 <%= link_to "New blogger", new_blogger_path %>
 <hr>
-
-<div id="bloggers">
+<div class="card-group">
   <% @bloggers.each do |blogger| %>
     <%= render blogger %>
-    <p>
-    
-    </p>
   <% end %>
-</div>
-
-
+</div> <!-- fin cad group -->

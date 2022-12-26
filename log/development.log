@@ -1738,3 +1738,934 @@ Processing by BloggersController#index as HTML
 Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 3583)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-23 00:53:30 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 339.8ms | Allocations: 36057)
+Completed 200 OK in 383ms (Views: 355.0ms | ActiveRecord: 0.0ms | Allocations: 39479)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 00:53:36 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.5ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 1.7ms | Allocations: 445)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 60)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 27.1ms | Allocations: 8169)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 10679)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 1.2ms | Allocations: 12278)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-12-23 00:53:38 -0300
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 1.1ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2703)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 3056)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-23 00:53:42 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 14.0ms | Allocations: 4163)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 4468)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 6866)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 7269)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:05:42 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.3ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.6ms | Allocations: 110)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 3411)
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 17378)
+Completed 200 OK in 48ms (Views: 43.6ms | ActiveRecord: 2.0ms | Allocations: 18746)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-23 01:05:44 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 4.7ms | Allocations: 1869)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1959)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4255)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 4569)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-12-23 01:05:45 -0300
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2882)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 3522)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-23 01:05:48 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2532)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 2808)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-23 01:05:54 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2528)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 2786)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:05:55 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.4ms | Allocations: 77)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.5ms | Allocations: 60)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1185)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3472)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 3747)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-23 01:05:58 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2528)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2787)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:06:00 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.5ms | Allocations: 61)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.6ms | Allocations: 60)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1106)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3393)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.2ms | Allocations: 3663)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-12-23 01:06:01 -0300
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2528)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 2786)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-23 01:06:02 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2528)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 2786)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-12-23 01:06:12 -0300
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2525)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2783)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:06:22 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.4ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.4ms | Allocations: 61)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.5ms | Allocations: 60)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1100)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3387)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.4ms | Allocations: 3657)
+
+
+Started GET "/bloggers/1" for 127.0.0.1 at 2022-12-23 01:06:31 -0300
+Processing by BloggersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogger Load (0.6ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 118)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3418)
+Completed 200 OK in 22ms (Views: 7.9ms | ActiveRecord: 0.6ms | Allocations: 10036)
+
+
+Started DELETE "/bloggers/1" for 127.0.0.1 at 2022-12-23 01:06:34 -0300
+Processing by BloggersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mBlogger Load (0.4ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:52:in `destroy'
+  [1m[36mBlogger Destroy (2.9ms)[0m  [1m[31mDELETE FROM "bloggers" WHERE "bloggers"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/bloggers_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (16.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/bloggers
+Completed 302 Found in 77ms (ActiveRecord: 19.6ms | Allocations: 3003)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:06:34 -0300
+Processing by BloggersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.6ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.7ms | Allocations: 77)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 3474)
+Completed 200 OK in 69ms (Views: 56.5ms | ActiveRecord: 0.6ms | Allocations: 3831)
+
+
+Started GET "/bloggers/2" for 127.0.0.1 at 2022-12-23 01:06:39 -0300
+Processing by BloggersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.4ms | Allocations: 71)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 671)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2965)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 3705)
+
+
+Started DELETE "/bloggers/2" for 127.0.0.1 at 2022-12-23 01:06:41 -0300
+Processing by BloggersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mBlogger Load (0.1ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:52:in `destroy'
+  [1m[36mBlogger Destroy (0.4ms)[0m  [1m[31mDELETE FROM "bloggers" WHERE "bloggers"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/bloggers_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/bloggers
+Completed 302 Found in 16ms (ActiveRecord: 8.9ms | Allocations: 2444)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:06:41 -0300
+Processing by BloggersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 814)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3102)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 3375)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:06:43 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 814)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3108)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 3379)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-23 01:06:44 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 3.7ms | Allocations: 1804)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1892)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4180)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4459)
+
+
+Started POST "/bloggers" for 127.0.0.1 at 2022-12-23 01:11:27 -0300
+Processing by BloggersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blogger"=>{"titulo"=>"Estrategia Nacional de Turismo (ENT) 2030", "contenido"=>"\"Estrategia Nacional de Turismo 2030. Nos encontramos terminando el primer trimestre del 2022, periodo que, desde el punto de vista de la industria del turismo, ha estado marcada por grandes desafíos, entre ellos, la adaptación de los destinos a la realidad impuesta por la aún presente pandemia, el descubrimiento y apertura al turista nacional de destinos tradicionalmente enfocados en el turista extranjero, la acelerada necesidad de digitalización de la industria que se ha impuesto en el último tiempo -y que llegó para quedarse!-, y el desafío para el sector que representa el cambio climático, entre otros.Navegando por una conocida red social, me encontré con un interesante documento donde se presenta la Estrategia Nacional de Turismo (ENT) 2030, la cual ha sido diseñada por la Subsecretaría de Turismo, en conjunto con otros actores de la industria nacional. Este documento define la hoja de ruta para el desarrollo del sector hacia el 2030 y está estructurado en torno a cuatro pilares estratégicos: 1) Sustentabilidad -económica, social y ambiental-, 2) Innovación y transformación digital, 3) Desarrollo regional, 4) y la Experiencia del turista.  Después de leer el documento hay mucho para reflexionar. Es una herramienta interesante para ver cómo se perfilará el desarrollo del sector en los próximos años y cómo los emprendimientos, las organizaciones y los destinos turísticos estarán insertos en los diferentes planes de acción. También cómo se articulará la gobernanza del proyecto. Será interesante además descubrir, a medida que se publiquen, el detalle de cada una de las iniciativas y cómo ellas contribuirán al desarrollo del turismo en Chile, especialmente para la puesta en valor de una oferta de calidad y con contenido, para así transformar a Chile en el destino “imperdible” que tanto deseamos.\"", "link"=>"https://www.andando.cl/2022/03/24/estrategia-nacional-de-turismo-2030/", "tipo"=>"2", "estado"=>"1"}, "commit"=>"Create Blogger"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mBlogger Create (1.8ms)[0m  [1m[32mINSERT INTO "bloggers" ("titulo", "contenido", "link", "tipo", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["titulo", "Estrategia Nacional de Turismo (ENT) 2030"], ["contenido", "\"Estrategia Nacional de Turismo 2030. Nos encontramos terminando el primer trimestre del 2022, periodo que, desde el punto de vista de la industria del turismo, ha estado marcada por grandes desafíos, entre ellos, la adaptación de los destinos a la realidad impuesta por la aún presente pandemia, el descubrimiento y apertura al turista nacional de destinos tradicionalmente enfocados en el turista extranjero, la acelerada necesidad de digitalización de la industria que se ha impuesto en el último tiempo -y que llegó para quedarse!-, y el desafío para el sector que representa el cambio climático, entre otros.Navegando por una conocida red social, me encontré con un interesante documento donde se presenta la Estrategia Nacional de Turismo (ENT) 2030, la cual ha sido diseñada por la Subsecretaría de Turismo, en conjunto con otros actores de la industria nacional. Este documento define la hoja de ruta para el desarrollo del sector hacia el 2030 y está estructurado en torno a cuatro pilares estratégicos: 1) Sustentabilidad -económica, social y ambiental-, 2) Innovación y transformación digital, 3) Desarrollo regional, 4) y la Experiencia del turista.  Después de leer el documento hay mucho para reflexionar. Es una herramienta interesante para ver cómo se perfilará el desarrollo del sector en los próximos años y cómo los emprendimientos, las organizaciones y los destinos turísticos estarán insertos en los diferentes planes de acción. También cómo se articulará la gobernanza del proyecto. Será interesante además descubrir, a medida que se publiquen, el detalle de cada una de las iniciativas y cómo ellas contribuirán al desarrollo del turismo en Chile, especialmente para la puesta en valor de una oferta de calidad y con contenido, para así transformar a Chile en el destino “imperdible” que tanto deseamos.\""], ["link", "https://www.andando.cl/2022/03/24/estrategia-nacional-de-turismo-2030/"], ["tipo", 2], ["estado", 1], ["created_at", "2022-12-23 04:11:27.524696"], ["updated_at", "2022-12-23 04:11:27.524696"]]
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/bloggers/3
+Completed 302 Found in 22ms (ActiveRecord: 9.3ms | Allocations: 3411)
+
+
+Started GET "/bloggers/3" for 127.0.0.1 at 2022-12-23 01:11:27 -0300
+Processing by BloggersController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogger Load (0.3ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.6ms | Allocations: 75)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 695)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2980)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 3716)
+
+
+Started GET "/bloggers/3" for 127.0.0.1 at 2022-12-23 01:11:47 -0300
+Processing by BloggersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogger Load (0.1ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 75)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 665)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2954)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 3686)
+
+
+Started GET "/bloggers/3" for 127.0.0.1 at 2022-12-23 01:11:51 -0300
+Processing by BloggersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogger Load (0.3ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 75)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 665)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2949)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 3681)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-23 01:13:48 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 4.7ms | Allocations: 1744)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1831)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4118)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4393)
+
+
+Started POST "/bloggers" for 127.0.0.1 at 2022-12-23 01:14:12 -0300
+Processing by BloggersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blogger"=>{"titulo"=>"Destacan desempeño de Taekwondistas regionales en la 1ª Copa mundial 2022", "contenido"=>"En el Estadio Único Madre de Ciudades, se realizó la ceremonia de premiación de la Primera Copa del Mundo de Taekwondo ITF Argentina 2022, que se disputó con éxito en Santiago del Estero, durante el recién pasado fin de semana.", "link"=>"https://www.elobservatodo.cl/noticia/deporte/destacan-desempeno-de-taekwondistas-regionales-en-la-1-copa-mundial-2022", "tipo"=>"3", "estado"=>"1"}, "commit"=>"Create Blogger"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mBlogger Create (0.5ms)[0m  [1m[32mINSERT INTO "bloggers" ("titulo", "contenido", "link", "tipo", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["titulo", "Destacan desempeño de Taekwondistas regionales en la 1ª Copa mundial 2022"], ["contenido", "En el Estadio Único Madre de Ciudades, se realizó la ceremonia de premiación de la Primera Copa del Mundo de Taekwondo ITF Argentina 2022, que se disputó con éxito en Santiago del Estero, durante el recién pasado fin de semana."], ["link", "https://www.elobservatodo.cl/noticia/deporte/destacan-desempeno-de-taekwondistas-regionales-en-la-1-copa-mundial-2022"], ["tipo", 3], ["estado", 1], ["created_at", "2022-12-23 04:14:12.161475"], ["updated_at", "2022-12-23 04:14:12.161475"]]
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/bloggers/4
+Completed 302 Found in 17ms (ActiveRecord: 8.9ms | Allocations: 2360)
+
+
+Started GET "/bloggers/4" for 127.0.0.1 at 2022-12-23 01:14:12 -0300
+Processing by BloggersController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mBlogger Load (0.3ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.7ms | Allocations: 75)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 680)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2959)
+Completed 200 OK in 23ms (Views: 18.6ms | ActiveRecord: 0.3ms | Allocations: 3694)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:14:16 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1099)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3386)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 3657)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-23 01:14:53 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 3.5ms | Allocations: 1732)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1819)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4106)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 4381)
+
+
+Started POST "/bloggers" for 127.0.0.1 at 2022-12-23 01:15:32 -0300
+Processing by BloggersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blogger"=>{"titulo"=>"los desafíos de la educación pública post pandemia", "contenido"=>"La tramitación del proyecto de ley Miscelánea en la comisión de Educación de la Cámara de Diputadas y Diputados, además de la discusión en sala y despacho hacia el Senado este martes 9 de agosto, ha sido una importante oportunidad para legislar sobre medidas concretas que mejoren los procesos educativos en una difícil situación post pandemia. Y si bien esta iniciativa se enmarca en dicho contexto, demuestra la voluntad de nuestro gobierno en avanzar en uno de los anhelos más sentidos y movilizadores de las últimas décadas: la recuperación de la educación pública.", "link"=>"https://www.lanoticia.cl/tramite1", "tipo"=>"4", "estado"=>"1"}, "commit"=>"Create Blogger"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mBlogger Create (0.6ms)[0m  [1m[32mINSERT INTO "bloggers" ("titulo", "contenido", "link", "tipo", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["titulo", "los desafíos de la educación pública post pandemia"], ["contenido", "La tramitación del proyecto de ley Miscelánea en la comisión de Educación de la Cámara de Diputadas y Diputados, además de la discusión en sala y despacho hacia el Senado este martes 9 de agosto, ha sido una importante oportunidad para legislar sobre medidas concretas que mejoren los procesos educativos en una difícil situación post pandemia. Y si bien esta iniciativa se enmarca en dicho contexto, demuestra la voluntad de nuestro gobierno en avanzar en uno de los anhelos más sentidos y movilizadores de las últimas décadas: la recuperación de la educación pública."], ["link", "https://www.lanoticia.cl/tramite1"], ["tipo", 4], ["estado", 1], ["created_at", "2022-12-23 04:15:32.356527"], ["updated_at", "2022-12-23 04:15:32.356527"]]
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/bloggers/5
+Completed 302 Found in 20ms (ActiveRecord: 10.1ms | Allocations: 2353)
+
+
+Started GET "/bloggers/5" for 127.0.0.1 at 2022-12-23 01:15:32 -0300
+Processing by BloggersController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.6ms | Allocations: 75)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 701)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2980)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 3715)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:15:40 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1251)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3538)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 3808)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:16:50 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 1.2ms | Allocations: 323)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.4ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2030)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4806)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms | Allocations: 5679)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:16:51 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.3ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.4ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1242)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3529)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 3822)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-23 01:16:52 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 16.1ms | Allocations: 2262)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 17.8ms | Allocations: 2541)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 4845)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 5180)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:16:53 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 1.6ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.5ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1260)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 3552)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.2ms | Allocations: 3823)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:17:00 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1260)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3548)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 3816)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:18:41 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.5ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 1.2ms | Allocations: 320)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2064)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 4847)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.5ms | Allocations: 5699)
+
+
+Started GET "/..." for 127.0.0.1 at 2022-12-23 01:18:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:20:14 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.4ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 2.9ms | Allocations: 320)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.5ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.4ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2008)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 4799)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.4ms | Allocations: 5672)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:21:55 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.3ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:8
+  Rendered bloggers/_blogger.html.erb (Duration: 1.1ms | Allocations: 320)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1998)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4774)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.3ms | Allocations: 5647)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:22:51 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 1.4ms | Allocations: 321)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2014)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4790)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.2ms | Allocations: 5663)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:25:53 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.4ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 1.6ms | Allocations: 321)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4787)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.4ms | Allocations: 5660)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-23 01:26:12 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 1.2ms | Allocations: 321)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2002)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4793)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.2ms | Allocations: 5668)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-23 01:27:30 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 7.5ms | Allocations: 2279)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2557)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 4850)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 5206)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-26 15:00:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 35496)
+Completed 200 OK in 82ms (Views: 69.7ms | ActiveRecord: 0.0ms | Allocations: 38918)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-26 15:00:52 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2611)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2936)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-12-26 15:00:54 -0300
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 1.1ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2589)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 2928)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:00:55 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.4ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.7ms | Allocations: 445)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 8254)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 10764)
+Completed 200 OK in 29ms (Views: 23.9ms | ActiveRecord: 1.0ms | Allocations: 12361)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-26 15:01:00 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 52.6ms | Allocations: 4101)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 56.4ms | Allocations: 4409)
+  Rendered layout layouts/application.html.erb (Duration: 69.3ms | Allocations: 6813)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.0ms | Allocations: 7252)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:01:01 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.5ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.4ms | Allocations: 81)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.7ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1262)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3555)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.5ms | Allocations: 3867)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-12-26 15:01:02 -0300
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2451)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2710)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-26 15:01:02 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2457)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2715)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-12-26 15:01:03 -0300
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2442)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2700)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:01:04 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.3ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.6ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.6ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1178)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3465)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.3ms | Allocations: 3735)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-26 15:01:04 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 2.5ms | Allocations: 1687)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1775)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4067)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4348)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:01:06 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.4ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1195)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3484)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 3758)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-26 15:01:13 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 3.3ms | Allocations: 1688)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1775)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4065)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4344)
+
+
+Started POST "/bloggers" for 127.0.0.1 at 2022-12-26 15:01:59 -0300
+Processing by BloggersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blogger"=>{"titulo"=>"Un equipo nuevo y un posible comprador: la Fórmula 1 podría tener nuevas caras", "contenido"=>"Los movimientos empresariales en la Fórmula 1 están siendo más llamativos de lo normal. Un gigante japonés quiere entrar en el circuito máximo en 2026 y otra marca alemana quiere sumarse a la competencia. La japonesa Honda buscará sumarse en 2026 a la competencia, sobre todo si se aprueba un nuevo reglamento de motores con sostenibilidad. La japonesa es la proveedora de motores de los equipos Alpha Tauri y Redbull, pero quiere lanzarse también con colores propios. La idea es que, al alero de los éxitos de Max Verstappen, los orientales puedan volver a hacerse un nombre en la Fórmula 1, de la que no participan como equipo desde 2008.", "link"=>"https://www.deportes13.cl/formula-1/un-equipo-nuevo-y-un-posible-comprador-la-formula-1-podria-tener-nuevas-caras", "tipo"=>"2", "estado"=>"1"}, "commit"=>"Create Blogger"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mBlogger Create (0.6ms)[0m  [1m[32mINSERT INTO "bloggers" ("titulo", "contenido", "link", "tipo", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["titulo", "Un equipo nuevo y un posible comprador: la Fórmula 1 podría tener nuevas caras"], ["contenido", "Los movimientos empresariales en la Fórmula 1 están siendo más llamativos de lo normal. Un gigante japonés quiere entrar en el circuito máximo en 2026 y otra marca alemana quiere sumarse a la competencia. La japonesa Honda buscará sumarse en 2026 a la competencia, sobre todo si se aprueba un nuevo reglamento de motores con sostenibilidad. La japonesa es la proveedora de motores de los equipos Alpha Tauri y Redbull, pero quiere lanzarse también con colores propios. La idea es que, al alero de los éxitos de Max Verstappen, los orientales puedan volver a hacerse un nombre en la Fórmula 1, de la que no participan como equipo desde 2008."], ["link", "https://www.deportes13.cl/formula-1/un-equipo-nuevo-y-un-posible-comprador-la-formula-1-podria-tener-nuevas-caras"], ["tipo", 2], ["estado", 1], ["created_at", "2022-12-26 18:01:59.692442"], ["updated_at", "2022-12-26 18:01:59.692442"]]
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (127.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/bloggers/6
+Completed 302 Found in 135ms (ActiveRecord: 127.9ms | Allocations: 3845)
+
+
+Started GET "/bloggers/6" for 127.0.0.1 at 2022-12-26 15:01:59 -0300
+Processing by BloggersController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 121)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1038)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3423)
+Completed 200 OK in 28ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 6197)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:02:04 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.1ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 64)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1328)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3616)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3891)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-26 15:02:14 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 2.2ms | Allocations: 1724)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1812)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4099)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4380)
+
+
+Started POST "/bloggers" for 127.0.0.1 at 2022-12-26 15:03:04 -0300
+Processing by BloggersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blogger"=>{"titulo"=>"buenas y malas noticias", "contenido"=>"habian muchas noticias que agregar pero solo agregamos algunas en el link puedes ver todas en nuestro drive", "link"=>"https://docs.google.com/spreadsheets/d/16sxYwLGJaKSsAFIe4_YLVHL4x_B64Vv538uenJIAf7s/edit#gid=66744023", "tipo"=>"2", "estado"=>"1"}, "commit"=>"Create Blogger"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mBlogger Create (0.3ms)[0m  [1m[32mINSERT INTO "bloggers" ("titulo", "contenido", "link", "tipo", "estado", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["titulo", "buenas y malas noticias"], ["contenido", "habian muchas noticias que agregar pero solo agregamos algunas en el link puedes ver todas en nuestro drive"], ["link", "https://docs.google.com/spreadsheets/d/16sxYwLGJaKSsAFIe4_YLVHL4x_B64Vv538uenJIAf7s/edit#gid=66744023"], ["tipo", 2], ["estado", 1], ["created_at", "2022-12-26 18:03:04.355203"], ["updated_at", "2022-12-26 18:03:04.355203"]]
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (18.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bloggers_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/bloggers/7
+Completed 302 Found in 23ms (ActiveRecord: 18.4ms | Allocations: 2411)
+
+
+Started GET "/bloggers/7" for 127.0.0.1 at 2022-12-26 15:03:04 -0300
+Processing by BloggersController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 73)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 628)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2907)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 3643)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:03:06 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.1ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1469)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3756)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 4026)
+
+
+Started GET "/bloggers/7" for 127.0.0.1 at 2022-12-26 15:03:22 -0300
+Processing by BloggersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogger Load (0.1ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 598)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2877)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 3609)
+
+
+Started GET "/bloggers/7" for 127.0.0.1 at 2022-12-26 15:03:25 -0300
+Processing by BloggersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogger Load (0.1ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/show.html.erb within layouts/application
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered bloggers/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 589)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2868)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 3601)
+
+
+Started GET "/bloggers/7/edit" for 127.0.0.1 at 2022-12-26 15:03:27 -0300
+Processing by BloggersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBlogger Load (1.8ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers" WHERE "bloggers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/bloggers_controller.rb:63:in `set_blogger'
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/edit.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 7.0ms | Allocations: 1814)
+  Rendered bloggers/edit.html.erb within layouts/application (Duration: 94.5ms | Allocations: 2088)
+  Rendered layout layouts/application.html.erb (Duration: 103.5ms | Allocations: 4367)
+Completed 200 OK in 107ms (Views: 104.0ms | ActiveRecord: 1.8ms | Allocations: 5153)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:03:28 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.3ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 2.8ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 62)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1462)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 3758)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.3ms | Allocations: 4029)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:03:30 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.1ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1456)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3748)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 4019)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-26 15:03:32 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2477)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2735)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-12-26 15:03:33 -0300
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2463)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2721)
+
+
+Started GET "/bloggers" for 127.0.0.1 at 2022-12-26 15:03:34 -0300
+Processing by BloggersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/index.html.erb within layouts/application
+  [1m[36mBlogger Load (0.2ms)[0m  [1m[34mSELECT "bloggers".* FROM "bloggers"[0m
+  ↳ app/views/bloggers/index.html.erb:7
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 65)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 64)
+  Rendered bloggers/_blogger.html.erb (Duration: 0.3ms | Allocations: 62)
+  Rendered bloggers/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1468)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3755)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 4025)
+
+
+Started GET "/nueva" for 127.0.0.1 at 2022-12-26 15:03:35 -0300
+Processing by BloggersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bloggers/new.html.erb within layouts/application
+  Rendered bloggers/_form.html.erb (Duration: 3.0ms | Allocations: 1676)
+  Rendered bloggers/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1763)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4050)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4325)
+
+
