@@ -30,7 +30,7 @@ app>views>layouts>application.html.erb
 ## Aprendizaje Esperado 3
 <dl>
   <dt>Desarrollo</dt>
-  <dd>Creado Scaffold llamado blogger para las noticias y aplicado card de botstrap a la lista</dd>
+  <dd>Creado Scaffold llamado bloggers para las noticias y aplicado card de bootstrap a la lista</dd>
 
 ```rails
 rails generate scaffold bloggers titulo:string contenido:string link:string tipo:integer estado:integer
